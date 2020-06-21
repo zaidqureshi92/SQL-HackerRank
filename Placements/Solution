@@ -1,0 +1,12 @@
+Select a.name
+from Students a,
+    Friends b,
+    Packages C,
+    Packages D,
+    Students e
+where a.ID= b.ID
+    and a.ID = c.ID
+    and b.friend_ID = d.ID
+    and d.salary > c.salary
+    and b.friend_id = e.ID
+order by d.salary;
